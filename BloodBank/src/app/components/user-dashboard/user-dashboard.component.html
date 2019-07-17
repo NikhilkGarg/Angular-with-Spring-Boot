@@ -1,0 +1,67 @@
+<div class="span" style="padding-top:40px;">
+    <div class="wrapper">
+       <!-- Sidebar Holder -->
+       <nav id="sidebar">
+        <ul class="list-unstyled components">
+               <div id="compo">
+               <li>
+                   <h3> </h3>
+               </li>
+               
+               <li>
+                   <h3>Dashboard</h3>
+               </li>
+             </div>
+               <div id="cont">
+                <li>
+                    <a href="javascript:void(0);" (click)="donation()">Donate Blood</a>
+                </li>
+                <!-- <li>
+                    <a href="javascript:void(0);" (click)="recieve()">Require Blood?</a>
+                </li> -->
+               <li>
+                   <a href="javascript:void(0);" (click)="getNotification()">Show Notifications</a>
+               </li>
+               <li>
+                   <a href="javascript:void(0);" (click)="getCampaign()">Show Campaigns</a>
+               </li>
+               
+               <li>
+                <a href="javascript:void(0);" (click)="userpage()">Edit Profile</a>
+            </li>
+               <li>
+                   <a href="javascript:void(0);" (click)="logout()">Logout</a>
+               </li>
+            
+               </div>
+           </ul>
+       </nav>
+   </div>
+       <!-- Page Content Holder -->
+       <div id="content">
+             <div>
+               <h3>Welcome, {{user.userName}}</h3>
+             </div>
+             <div id="card" *ngIf="notifyclick">
+           <div class="card fixed">
+            
+               <div class="card-header bg-danger" >Notifications</div>
+               <div class="card-body">
+                <h2>CDAC Acts Camp</h2>
+                <p style="color:black;">Date:1-02-2019<br>Location:Innovation Park, 34/B/1, Panchawati Rd, Mansarovar, Panchawati, Pashan, Pune, Maharashtra 411008</p>      
+               </div> 
+               <!-- <div class="card-footer">Footer</div> -->
+  
+             </div>
+           </div>
+  
+           <app-user-details *ngIf="userpageclick"></app-user-details>
+           <app-notifications *ngIf="notificationclick"></app-notifications>
+          <app-campaigns *ngIf="campaignclick"></app-campaigns>
+          <app-donor-consent *ngIf="donationclick"></app-donor-consent>
+  
+          
+   
+           
+       </div>
+   </div>

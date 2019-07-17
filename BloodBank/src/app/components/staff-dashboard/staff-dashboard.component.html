@@ -1,0 +1,82 @@
+<div class="span" style="padding-top:40px;">
+    <div class="wrapper">
+       <!-- Sidebar Holder -->
+       <nav id="sidebar">
+        <ul class="list-unstyled components">
+               <div id="compo">
+               <li>
+                   <h3> </h3>
+               </li>
+               
+               <li>
+                   <h3>Dashboard</h3>
+               </li>
+             </div>
+               <div id="cont">
+                <li>
+                    <a href="javascript:void(0);" (click)="edit()">Edit</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" (click)="viewUsers()">View User</a>
+                </li>
+               <li>
+                   <a href="javascript:void(0);" (click)="listCamps()">Show Campaigns</a>
+               </li>
+               <li>
+                <a href="javascript:void(0);" (click)="listBanks()">Show Bank Details</a>
+               </li>
+               <li>
+                    <a href="javascript:void(0);" (click)="listNotifs()">Show Notifications</a>
+                   </li>
+               <li>
+                <a href="javascript:void(0);" (click)="logout()">Logout</a>
+                </li>
+            
+               </div>
+           </ul>
+       </nav>
+   </div>
+       <!-- Page Content Holder -->
+       <div id="content">
+             <div>
+               <h3>Welcome, {{staff.staffName}}</h3>
+             </div>
+             <div id="card">
+           <!-- <div class="card fixed">
+            
+               <div class="card-header bg-danger">Notiications</div>
+               <div class="card-body">Blood is a body fluid in humans and other animals that delivers necessary substances such as nutrients and oxygen to the cells and transports metabolic waste products away from those same cells. In vertebrates, it is composed of blood cells suspended in blood plasma</div> 
+              
+             </div> -->
+                <h4>Blood Table</h4>
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Blood Serial no</th>
+                        <th scope="col">Blood Type</th>
+                        <th scope="col">Entry Date</th>
+                        <th scope="col">Expiry Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let bank of banks">
+                            <td>{{bank.bloodSerialNo}}</td>
+                            <td>{{bank.bloodType}}</td>
+                            <td>{{bank.dateEntry}}</td>
+                            <td>{{bank.dateExpire}}</td>
+                           </tr>
+                    </tbody>
+                  </table> 
+                
+           </div>
+
+
+           <app-staff-details *ngIf="editpageclick"></app-staff-details>
+           <app-list-users *ngIf="listusersclick"></app-list-users>
+           <app-list-campaign *ngIf="listcampclick"></app-list-campaign>
+           <app-list-blood-bank *ngIf="listbankclick"></app-list-blood-bank>
+           <app-list-notification *ngIf="listnotifclick"></app-list-notification>
+   
+           
+       </div>
+   </div>

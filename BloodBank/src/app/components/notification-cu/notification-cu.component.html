@@ -1,0 +1,35 @@
+<div class="container">
+    <div id="margin">
+    <form (ngSubmit)="processForm()">
+        <div class="form group">
+            <label for="notifMSG">NotifMSG</label>
+            <input type="text" name="notifMSG" class="form-control" [(ngModel)]="notif.notifMSG"/>   
+        </div>
+        <div class="form group">
+            <label for="userID">UserID</label>
+            <input type="text" name="userID" class="form-control" [(ngModel)]="notif.userID"/>   
+        </div>
+        <div class="form group">
+            <label for="campaignID">campaignID</label>
+            <input type="text" name="campaignID" class="form-control" [(ngModel)]="notif.campaignID"/>   
+        </div>
+        <div class="form group">
+            <label for="postCode">postCode</label>
+            <input type="number" name="postCode" class="form-control" [(ngModel)]="notif.postCode"/>   
+        </div>
+        <div class="form group">
+            <label for="bloodType">Blood Type</label>
+            <input type="text" name="bloodType" class="form-control" [(ngModel)]="notif.bloodType"/>   
+        </div>
+        <div class="form group">
+            <label for="lastDonate">Last Donate</label>
+            <input type="date" name="lastDonate" class="form-control" [(ngModel)]="notif.lastDonate"/>   
+        </div>
+        <div class="form group">
+            <label for="donerEligiblity">Doner Eligiblity</label>
+            <input type="text" name="donerEligiblity" class="form-control" [(ngModel)]="notif.donerEligiblity"/>   
+        </div>
+        <input type="submit" value="Save" class="btn btn-success" />
+    </form>
+  </div>
+</div>

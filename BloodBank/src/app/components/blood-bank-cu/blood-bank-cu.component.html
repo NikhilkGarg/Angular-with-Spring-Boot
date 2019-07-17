@@ -1,0 +1,17 @@
+<div class="container">
+    <form (ngSubmit)="processForm()">
+        <div class="form group">
+            <label for="bloodType">Blood Type</label>
+            <input type="text" name="bloodType" class="form-control" [(ngModel)]="bb.bloodType"/>   
+        </div>
+        <div class="form group">
+            <label for="dateEntry">Date Entry</label>
+            <input type="date" name="dateEntry" class="form-control" [(ngModel)]="bb.dateEntry"/>   
+        </div>
+        <div class="form group">
+            <label for="dateExpire">Date Expire</label>
+            <input type="date" name="dateExpire" class="form-control" [(ngModel)]="bb.dateExpire"/>   
+        </div>
+        <input type="submit" value="Save" class="btn btn-success" />
+    </form>
+</div>

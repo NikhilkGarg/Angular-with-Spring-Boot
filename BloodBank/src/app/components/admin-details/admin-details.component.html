@@ -1,0 +1,21 @@
+<div class="container" id="margin">
+  <form (ngSubmit)="processForm()">
+      <div class="form group">
+          <label for="adminID">ID</label>
+          <input type="number" name="adminID" class="form-control" [(ngModel)]="admin.adminID"/>   
+      </div>
+      <div class="form group">
+        <label for="adminName">Name</label>
+        <input type="text" name="adminName" class="form-control" [(ngModel)]="admin.adminName"/>   
+    </div>
+      <div class="form group">
+          <label for="adminUserName">Username</label>
+          <input type="text" name="adminUserName" class="form-control" [(ngModel)]="admin.adminUserName"/>   
+      </div>
+      <div class="form group">
+          <label for="adminPassword">Password</label>
+          <input type="text" name="adminPassword" class="form-control" [(ngModel)]="admin.adminPassword"/>   
+      </div>
+      <input type="submit" value="Save" class="btn btn-success" />
+  </form>
+</div>

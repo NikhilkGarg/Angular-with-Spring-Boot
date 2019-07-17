@@ -1,0 +1,98 @@
+
+  <!-- <div class="form-group row">
+      <label for="userID">User ID</label>
+      <input type="number" name="userID" class="form-control" [(ngModel)]="userID"/>   
+  </div>
+  <div class="form-group row">
+      <label for="userName">Name</label>
+      <input type="text" name="userName" class="form-control" [(ngModel)]="userName"/>   
+  </div>
+  <div class="form-group row">
+      <label for="userAddress">Address</label>
+      <input type="text" name="userAddress" class="form-control" [(ngModel)]="userAddress"/>   
+  </div>
+  <div class="form-group row">
+      <label for="bloodType">BloodType</label>
+      <input type="text" name="bloodType" class="form-control" [(ngModel)]="bloodType"/>   
+  </div>
+  <div class="form-group row">
+      <label for="userContact">Contact</label>
+      <input type="number" name="userContact" class="form-control" [(ngModel)]="userContact"/>   
+  </div>
+  <div class="form-group row">
+      <label for="userDOB">Date of Birth</label>
+      <input type="date" name="userDOB" class="form-control" [(ngModel)]="userDOB"/>   
+  </div>
+  <div class="form-group row">
+      <label for="userGender">Gender</label>
+      <input type="text" name="userGender" class="form-control" [(ngModel)]="userGender"/>   
+  </div>
+  <div class="form-group row">
+      <label for="userWeight">Weight</label>
+      <input type="text" name="userWeight" class="form-control" [(ngModel)]="userWeight"/>   
+  </div>
+  <div class="form-group row">
+      <label for="userUserName">Username</label>
+      <input type="text" name="userUserName" class="form-control" [(ngModel)]="userUserName"/>   
+  </div>
+  <div class="form-group row">
+      <label for="userPassword">Password</label>
+      <input type="text" name="userPassword" class="form-control" [(ngModel)]="userPassword"/>   
+  </div>
+  <input type="submit" value="Save" class="btn btn-success" /> -->
+<div class="container">
+    <div id="registerUser">
+        <form #form="ngForm" (ngSubmit)="registerUser(form)">
+            <div class="form-group row">
+                <label for="userName" class="col-sm-2 col-form-label"><h5>Name</h5></label>
+                <div class="col-sm-10">
+                    <input type="text" name="userName" class="form-control" [(ngModel)]="userName" placeholder="Name"/>   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="userAddress" class="col-sm-2 col-form-label"><h5>Address</h5></label>
+                <div class="col-sm-10">
+                    <input type="text" name="userAddress" class="form-control" [(ngModel)]="userAddress" placeholder="Address"/>   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="bloodType" class="col-sm-2 col-form-label"><h5>BloodType</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="bloodType" class="form-control" [(ngModel)]="bloodType" placeholder="BloodType"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="userContact" class="col-sm-2 col-form-label"><h5>Contact</h5></label>
+                <div class="col-sm-10">
+                <input type="number" name="userContact" class="form-control" [(ngModel)]="userContact" placeholder="Contact"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="userDOB" class="col-sm-2 col-form-label"><h5>Date of Birth</h5></label>
+                <div class="col-sm-10">
+                <input type="date" name="userDOB" class="form-control" [(ngModel)]="userDOB"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="userGender" class="col-sm-2 col-form-label"><h5>Gender</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="userGender" class="form-control" [(ngModel)]="userGender" placeholder="Gender"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="userWeight" class="col-sm-2 col-form-label"><h5>Weight</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="userWeight" class="form-control" [(ngModel)]="userWeight" placeholder="Weight"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="userUserName" class="col-sm-2 col-form-label"><h5>Username</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="userUserName" class="form-control" [(ngModel)]="userUserName" placeholder="UserName"/>   
+            </div></div>
+            <div class="form-group row">
+                <label for="userPassword" class="col-sm-2 col-form-label"><h5>Password</h5></label>
+                <div class="col-sm-10">
+                <input type="text" name="userPassword" class="form-control" [(ngModel)]="userPassword" placeholder="Password"/>   
+            </div></div>
+            <div id="sub">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+</form>
+</div>
+</div>

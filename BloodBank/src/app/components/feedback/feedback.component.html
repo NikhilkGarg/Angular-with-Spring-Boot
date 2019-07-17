@@ -1,0 +1,23 @@
+<div class="container" id="feedback">
+
+    <table class="table table-striped">
+      <thead>
+        <th>FeedBackID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>FeedBack</th>
+        <!-- <th>Operations</th> -->
+      </thead>
+      <tbody>
+        <tr *ngFor="let feed of feeds">
+          <td>{{feed.feedID}}</td>
+          <td>{{feed.name}}</td>
+          <td>{{feed.email}}</td>
+          <td>{{feed.feedback}}</td>
+          <!-- <td><button class="btn btn-danger" (click)="deletefeed(feed)">Delete</button>
+              <button class="btn btn-primary" (click)="updatefeed(feed)">Edit</button></td> -->
+        </tr>
+      </tbody>
+    </table>
+    <!-- <button class="btn btn-primary" (click)="createfeed()">New feed</button> -->
+</div>

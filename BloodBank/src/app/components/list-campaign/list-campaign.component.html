@@ -1,0 +1,22 @@
+<div class="container" id="margin">
+  <table class="table table-striped">
+    <thead>
+      <th>ID</th>
+      <th>StartDate</th>
+      <th>EndDate</th>
+      <th>Address</th>
+      <th>Operations</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let camp of camps">
+        <td>{{camp.campaignID}}</td>
+        <td>{{camp.startDate}}</td>
+        <td>{{camp.endDate}}</td>
+        <td>{{camp.address}}</td>
+        <td><button class="btn btn-danger" (click)="deleteCampaign(camp)">Delete</button>
+          <button class="btn btn-danger" (click)="updateCampaign(camp)">Update</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary" (click)="createCampaign()">Create Campaign</button>
+</div>

@@ -1,0 +1,30 @@
+<div class="container" id="margin">
+    <table class="table table-striped">
+      <thead>
+        <th>NotifID</th>
+        <th>NotifMSG</th>
+        <th>UserID</th>
+        <th>CampaignID</th>
+        <th>PostCode</th>
+        <th>BloodType</th>
+        <th>LastDonate</th>
+        <th>DonerEligiblity</th>
+        <th>Operations</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let notif of notifs">
+          <td>{{notif.notifID}}</td>
+          <td>{{notif.notifMSG}}</td>
+          <td>{{notif.userID}}</td>
+          <td>{{notif.campaignID}}</td>
+          <td>{{notif.postCode}}</td>
+          <td>{{notif.bloodType}}</td>
+          <td>{{notif.lastDonate}}</td>
+          <td>{{notif.donerEligiblity}}</td>
+          <td><button class="btn btn-danger" (click)="deleteNotif(notif)">Delete</button>
+            <button class="btn btn-primary" (click)="updateNotif(notif)">Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary" (click)="createNotif()">Create Notification</button>
+  </div>

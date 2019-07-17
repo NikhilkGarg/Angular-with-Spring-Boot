@@ -1,0 +1,38 @@
+<div class="container">
+  <div id="ff">
+      <form #form="ngForm" (ngSubmit)="submitFeedback(form)">
+          <div class="form-group row">
+              <label for="name" class="col-sm-2 col-form-label"><h5>Name</h5></label>
+              <div class="col-sm-10">
+                  <input type="text" name="name" class="form-control" [(ngModel)]="name" placeholder="Name"/>   
+              </div>
+          </div>
+          <div class="form-group row">
+              <label for="email" class="col-sm-2 col-form-label"><h5>Email</h5></label>
+              <div class="col-sm-10">
+                  <input type="text" name="email" class="form-control" [(ngModel)]="email" placeholder="Email"/>   
+              </div>
+          </div>
+          <div class="form-group">
+            <label for="feedback" class="col-sm-2 col-form-label"><h5>Feedback</h5></label>
+            <div class="col-sm-10">
+            <textarea
+              id="feedback"
+              class="form-control"
+              name="feedback"
+              placeholder="Your feedback"
+              rows="10"
+              [(ngModel)]="feedback"
+              required minlength="10">
+            </textarea>
+          </div>
+        </div>
+          <div id="sub">
+            <button type="submit" class="btn btn-info pull-right">
+              <i class="fa fa-envelope-o"></i>
+              <span> Send Feedback</span>
+            </button>
+          </div>
+</form>
+</div>
+</div>

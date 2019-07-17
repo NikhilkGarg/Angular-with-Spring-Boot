@@ -1,0 +1,45 @@
+<div class="span" style="padding-top:40px;">
+  <div class="wrapper">
+     <!-- Sidebar Holder -->
+     <nav id="sidebar">
+      <ul class="list-unstyled components">
+             <div id="compo">
+             <li>
+                 <h3> </h3>
+             </li>
+             
+             <li>
+                 <h3>Dashboard</h3>
+             </li>
+           </div>
+             <div id="cont">
+             <li>
+                <a href="javascript:void(0);" (click)="editAdmin()">Edit</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" (click)="viewStaff()">View Staff</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" (click)="feedback()">View FeedBack</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" (click)="logout()">Logout</a>
+            </li>
+          
+             </div>
+         </ul>
+     </nav>
+ </div>
+     <!-- Page Content Holder -->
+     <div id="content">
+        <div>
+          <h3>Welcome, {{admin.adminName}}</h3>
+           </div>
+           
+         <app-admin-details *ngIf="editpageclick"></app-admin-details>
+         <app-list-staffs *ngIf="liststaffclick"></app-list-staffs>
+         <app-feedback *ngIf="feedbackclick"></app-feedback>
+
+
+     </div>
+ </div>

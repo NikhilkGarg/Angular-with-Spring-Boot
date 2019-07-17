@@ -1,0 +1,21 @@
+<div class="container" id="margin">
+    <table class="table table-striped">
+      <thead>
+        <th>BloodSerialNo</th>
+        <th>BloodType</th>
+        <th>DateEntry</th>
+        <th>DateExpire</th>
+        <!-- <th>Operations</th> -->
+      </thead>
+      <tbody>
+        <tr *ngFor="let bb of bbs">
+          <td>{{bb.bloodSerialNo}}</td>
+          <td>{{bb.bloodType}}</td>
+          <td>{{bb.dateEntry}}</td>
+          <td>{{bb.dateExpire}}</td>
+          <td><button class="btn btn-primary" (click)="updateBloodBank(bb)">Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary" (click)="createBloodBank()">Create Blood Bank</button>
+</div>

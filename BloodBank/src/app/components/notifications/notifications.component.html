@@ -1,0 +1,31 @@
+<div class="container">
+
+  <table class="table table-striped">
+    <thead>
+      <th>NotificationID</th>
+      <th>NotificationMSG</th>
+      <th>UserID</th>
+      <th>CampaignID</th>
+      <th>PostCode</th>
+      <th>BloodType</th>
+      <th>Last Donate</th>
+      <th>Donation Eligiblity</th>
+      <th>Delete</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let noti of notis">
+        <td>{{noti.notifID}}</td>
+        <td>{{noti.notifMSG}}</td>
+        <td>{{noti.userID}}</td>
+        <td>{{noti.campaignID}}</td>
+        <td>{{noti.postCode}}</td>
+        <td>{{noti.bloodType}}</td>
+        <td>{{noti.lastDonate}}</td>
+        <td>{{noti.donerEligiblity}}</td>
+        <td><button class="btn btn-danger" (click)="deleteNotis(noti)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- <button class="btn btn-primary" (click)="createUser()">New User</button> -->
+
+</div>

@@ -1,0 +1,22 @@
+<div class="container" id="margin">
+    <form #form="ngForm" (ngSubmit)="processForm()">
+        <div class="form-group row">
+            <label for="startDate" class="col-sm-2 col-form-label"><h5>Start Date</h5></label>
+            <div class="col-sm-10">
+            <input type="date" name="startDate" class="form-control" [(ngModel)]="startDate" placeholder="startDate"/>   
+        </div></div>
+        <div class="form-group row">
+            <label for="endDate" class="col-sm-2 col-form-label"><h5>End Date</h5></label>
+            <div class="col-sm-10">
+            <input type="date" name="endDate" class="form-control" [(ngModel)]="endDate" placeholder="endDate"/>   
+        </div></div>
+        <div class="form-group row">
+            <label for="address" class="col-sm-2 col-form-label"><h5>Address</h5></label>
+            <div class="col-sm-10">
+            <input type="text" name="address" class="form-control" [(ngModel)]="address" placeholder="address"/>   
+        </div></div>
+        <div id="sub">
+        <input type="submit" value="Save" class="btn btn-primary" />
+      </div>
+    </form>
+</div>

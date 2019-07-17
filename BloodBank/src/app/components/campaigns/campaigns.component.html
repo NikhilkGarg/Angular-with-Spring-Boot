@@ -1,0 +1,21 @@
+<div class="container">
+
+  <table class="table table-striped">
+    <thead>
+      <th>Campaign ID</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Address</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let camp of camps">
+        <td>{{camp.campaignID}}</td>
+        <td>{{camp.startDate}}</td>
+        <td>{{camp.endDate}}</td>
+        <td>{{camp.address}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- <button class="btn btn-primary" (click)="createUser()">New User</button> -->
+
+</div>
